@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head lang="fr">
+<meta charset="utf-8">
+
+<style>
+html{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #fff;
+	color: #000;
+	/* This is the width of a Little Printer publication. */
+	width: 384px;
+	padding: 0;
+	/* Leave a little space above and below the publication. */
+	margin: 10px 0;
+	/* See the available fonts at
+	 * http://remote.bergcloud.com/developers/style_guide/fonts */
+	font-family: Georgia, serif;
+	font-size: 14px;
+}
+
+.headline{
+	font-family: "Cabin", sans-serif;
+	text-align: center;
+	line-height: 2em;
+}
+
+.headline #bonjour{
+	font-size: 52px;
+}
+
+.headline #soustitre{
+	font-size: 12px;
+}
+
+div.bubble 
+{
+position: relative;
+width: 290px;
+margin: auto;
+height: 55px;
+padding: 0px;
+background: #fff;
+-webkit-border-radius: 12px;
+-moz-border-radius: 12px;
+border-radius: 12px;
+border: #000 solid 1px;
+left: 12%;
+}
+
+div.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 11px 15px 11px 0;
+border-color: transparent #fff;
+display: block;
+width: 0;
+z-index: 1;
+margin-top: -11px;
+left: -15px;
+top: 50%;
+}
+
+div.bubble:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 11px 15px 11px 0;
+border-color: transparent #000;
+display: block;
+width: 0;
+z-index: 0;
+margin-top: -11px;
+left: -16px;
+top: 50%;
+}
+
+img{
+	float: left;
+}
+
+hr{
+	border: 1px dotted black;
+}
+</style>
+</head>
+<body>
+
+<section class="headline">
+<p><span id="bonjour">Bonjour, Raphaël.</span><br>
+<span id="soustitre">Voyons comment le monde a changé depuis la dernière fois...</span></p>
+</section><hr>
+
+<section class="news1">
+<img src="conchitawurst_profile.png">
+<div class="bubble">
+<p>&laquo Nous sommes l'unité et rien ne pourra nous arrêter. &raquo</p>
+</div>
+
+<p class="text">Dire que Conchita Wurst, avec ses faux-cils charbonneux et sa barbe postiche qui lui mange le visage, a décoiffé l'Autriche, est un euphémisme : la victoire de cette diva travestie au concours de l'Eurovision, samedi 10 mai à Copenhague, est une divine surprise pour un pays réputé pour son conservatisme.</p>
+</section>
+<hr>
+
+</body>
+</html>
